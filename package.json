@@ -11,5 +11,18 @@
   "dependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-watch": "^0.6.1"
+  },
+  "devDependencies": {
+    "grunt-shell": "^1.1.2"
+  },
+  "jspm": {
+    "directories": {
+      "lib": ".",
+      "packages": "jspm_packages"
+    },
+    "dependencies": {
+      "grunt": "^0.4.5",
+      "grunt-contrib-watch": "^0.6.1"
+    }
   }
 }
