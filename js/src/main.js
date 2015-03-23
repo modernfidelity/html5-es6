@@ -1,6 +1,6 @@
 /***
  *
- * Main JS
+ * Main Application JS
  *
  */
 
@@ -36,9 +36,23 @@ var app = angular.module('myApp', [
 
 app.controller('mainController', MainController);
 
+app.directive('helloWorld', function() {
+    return {
+        restrict: 'AE',
+        replace: 'true',
+        template: '<h3>Hello World!!</h3>'
+    };
+});
 
-
-
+app.directive('someDirective', function () {
+    return {
+        scope: {},
+        controller: MainController,
+        controllerAs: 'ctrl',
+        bindToController: true,
+        template: '<div>{{ctrl.name}}</div>'
+    };
+});
 
 
 //export default {}

@@ -10,7 +10,7 @@ class MainController {
 
         console.log("MainController loaded..." );
 
-
+        this.name="bobby";
         this.firstName= "Monkey1";
         this.lastName= "Bob1";
 
