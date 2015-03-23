@@ -2,23 +2,41 @@
  *
  * Main JS
  *
- * @type {number}
  */
 
 
-import {Monkey} from "./monkey-api"
+import { Monkey } from "./classes/Monkey"
+
+import { MainController } from './controllers/MainController';
 
 
 
-console.log("loaded");
 
-//var bob = new Monkey({
-//    name: 'bob'
-//});
-
-
+// Launch a Monkey Object
 var simian = new Monkey("bob");
 
-simian.say("cats are aliens")
+simian.say("cats are aliens");
+simian.how();
 
-export default {}
+
+
+
+
+
+// Bootstrap Angular JS
+
+var app = angular.module('myApp', [
+
+    //'ngRoute',
+    //'ngResource'
+
+
+]);
+
+
+app.controller('mainController', MainController)
+
+
+
+
+//export default {}
