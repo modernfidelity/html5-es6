@@ -8,30 +8,27 @@ class MainController {
 
     constructor($scope) {
 
-        console.log("MainController loaded..." );
+        console.log("MainController loaded...");
 
-        this.name="bobby";
-        this.firstName= "Monkey1";
-        this.lastName= "Bob1";
-
-
-
-        //
-        //this.$scope.firstName= "Monkey";
-        //this.$scope.lastName= "Bob";
-
-
+        this.name = "Monkey Bob";
+        this.firstName = "Monkey";
+        this.lastName = "Bob";
 
 
     }
 
 
-    setname(){
+    setname() {
 
         return "set name func called";
 
     }
 
+    learnMore() {
+
+        alert("clicked");
+
+    }
 
 }
 

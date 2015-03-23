@@ -27,24 +27,26 @@
 
 <div class="mrjumbotron">
     <div class="container">
-        <h1>es6</h1>
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>es6</h1>
 
-        <div data-hello-world></div>
-        <div data-some-directive></div>
-
-        <p>This is an example app built with AngularJS 1.x and ES6 from
-
+                <div data-hello-world></div>
 
 
-            {{MainController.firstName + " " + lastName}}</p>
+                <p>This is an example app built with AngularJS 1.x and ES6 from
+                    <span data-some-directive></span></p>
 
-        <p><a class="btn btn-primary btn-sm" href="#" role="button">Learn
-            more &raquo;</a></p>
 
-        <p>1 + 1 = {{ 1 + 1 }}</p>
+                <p><a class="btn btn-primary btn-sm" href="#" role="button">Learn
+                    more &raquo;</a></p>
 
-        <div ng-view></div>
+                <p>1 + 1 = {{ 1 + 1 }}</p>
 
+                <div ng-view></div>
+            </div>
+
+        </div>
 
     </div>
 </div>
@@ -79,7 +81,6 @@
 
 <!-- JSPM ES6 Compile of SRC (app.js) -->
 <script src="js/builds/build.js"></script>
-
 
 
 </body>
