@@ -24,13 +24,13 @@
 
     </head>
 
-    <body ng-app="">
+    <body ng-app="myApp" ng-controller="myCtrl">
 
 
         <div class="mrjumbotron">
             <div class="container">
                 <h1>es6</h1>
-                <p>This is an example app built with AngularJS 1.x and ES6</p>
+                <p>This is an example app built with AngularJS 1.x and ES6 from {{firstName + " " + lastName}}</p>
                 <p><a class="btn btn-primary btn-sm" href="#" role="button">Learn more &raquo;</a></p>
 
                 <p>1 + 1 = {{ 1 + 1 }}</p>
@@ -53,7 +53,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
 
 
-
         <!-- Example of runtime ES6 JS before JSPM bunle compile -->
 
         <!--<script src="jspm_packages/system.js"></script>-->
@@ -64,12 +63,15 @@
         <!--</script>-->
 
 
-        <!-- JSPM ES6 Compile -->
-        <!--<script src="jspm_packages/traceur-runtime.js"></script>-->
+        <!-- Tracuer + SystemJS -->
+        <script src="jspm_packages/traceur-runtime.js"></script>
 
-        <!--<script src="js/builds/build.js"></script>-->
-
+        <!-- AngularJS 1.x -->
         <script src="bower_components/angular/angular.min.js"></script>
+
+
+        <!-- JSPM ES6 Compile of SRC (app.js) -->
+        <script src="js/builds/build.js"></script>
 
         <script src="js/src/app.js"></script>
 
