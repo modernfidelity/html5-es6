@@ -6,16 +6,19 @@
  */
 
 
-import Monkey from "./monkey-api"
+import {Monkey} from "./monkey-api"
 
-console.log("es6 loaded");
+
+
+console.log("loaded");
 
 //var bob = new Monkey({
 //    name: 'bob'
 //});
 
 
-Monkey.load();
+var simian = new Monkey("bob");
 
+simian.say("cats are aliens")
 
 export default {}
