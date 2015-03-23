@@ -40,7 +40,7 @@ app.directive('helloWorld', function() {
     return {
         restrict: 'AE',
         replace: 'true',
-        template: '<h3>Hello World!!</h3>'
+        template: '<h3>Hello JS Module World!!</h3>'
     };
 });
 
@@ -50,7 +50,7 @@ app.directive('someDirective', function () {
         controller: MainController,
         controllerAs: 'ctrl',
         bindToController: true,
-        template: '<div>{{ctrl.name}}</div>'
+        templateUrl: 'templates/someDirective.html'
     };
 });
 
