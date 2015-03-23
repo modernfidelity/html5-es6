@@ -34,7 +34,9 @@ var app = angular.module('myApp', [
 ]);
 
 
-app.controller('mainController', MainController)
+app.controller('mainController', MainController);
+
+
 
 
 
